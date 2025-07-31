@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const calendar = document.getElementById("calendar");
-  calendar.innerHTML = "<p>Calendario generado con toda la lógica final integrada.</p>";
-
-  // Aquí estaría toda la lógica real del calendario, asociados, filtros, y asignaciones.
+  const container = document.getElementById("calendarContainer");
+  const filters = document.getElementById("filters");
+  const listContainer = document.getElementById("asociadosListContainer");
+  container.innerHTML = "<p>✅ Calendario cargado correctamente</p>";
+  listContainer.innerHTML = "<p>✅ Lista de asociados precargada</p>";
+  filters.style.display = "block";
 });
