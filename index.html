@@ -8,13 +8,24 @@
 </head>
 <body>
   <h1>Calendario de vacaciones y DP</h1>
-  <div id="calendarContainer"></div>
-  <div id="filters">
-    <input type="text" id="searchLogin" placeholder="Buscar login...">
-    <select id="filterTurno"><option value="">Todos los turnos</option></select>
-    <select id="filterProceso"><option value="">Todos los procesos</option></select>
+  <div class="container">
+    <div class="calendar-controls">
+      <button id="prevMonth">←</button>
+      <span id="monthYear"></span>
+      <button id="nextMonth">→</button>
+    </div>
+    <div id="calendar"></div>
+    <div id="filters">
+      <input type="text" id="searchLogin" placeholder="Buscar login...">
+      <select id="filterTurno"><option value="">Todos los turnos</option></select>
+      <select id="filterProceso"><option value="">Todos los procesos</option></select>
+    </div>
+    <div id="asociadosListContainer"></div>
   </div>
-  <div id="asociadosListContainer"></div>
+  <div id="popup" class="hidden">
+    <div id="popupContent"></div>
+    <button onclick="closePopup()">Cerrar</button>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
